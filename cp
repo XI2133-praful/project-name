@@ -7,3 +7,4 @@ theme
 333333333333333333
 eeeeee
 ppppppppppppppp
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
